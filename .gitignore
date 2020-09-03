@@ -1,0 +1,11 @@
+.env
+/node_modules
+config.json
+.eslintrc.json
+settings.json
+.vscode
+/.vscode
+.dat
+.dll
+.exe
+/private
