@@ -26,6 +26,7 @@
     "@keyv/mysql": "^1.1.4",
     "discord.js": "^12.3.1",
     "eslint": "^7.8.1",
-    "keyv": "^4.0.1"
+    "keyv": "^4.0.1",
+    "node-fetch": "^2.6.0"
   }
 }
