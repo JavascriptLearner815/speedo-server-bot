@@ -3,6 +3,7 @@ const { readdirSync } = require('fs');
 const { prefix, token } = require('./config.json');
 
 const { Client, Collection } = require('discord.js');
+
 const client = new Client();
 
 const cooldowns = new Collection(); // Create a collection to hold command cooldowns
@@ -26,6 +27,7 @@ client.on('message', message => {
 
     const args = message.content.slice(prefix.length).trim()
         .split(/ +/);
+
     const commandName = args.shift().toLowerCase();
 
     const command = client.commands.get(commandName)
