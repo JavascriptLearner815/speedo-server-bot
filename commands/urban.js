@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 const { stringify } = require('querystring');
 const { MessageEmbed } = require('discord.js');
-const trim = (str, max) => str.length > max ? `${str.slice(0, max - 3)}...` : str;;
+const trim = (str, max) => str.length > max ? `${str.slice(0, max - 3)}...` : str;
 
 module.exports = {
     name: 'urban',
