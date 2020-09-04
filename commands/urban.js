@@ -19,7 +19,7 @@ module.exports = {
             const embed = new MessageEmbed()
                 .setColor('#EFFF00')
                 .setTitle('Not Found')
-                .setDescription(`No results were found for ${query}.`);
+                .setDescription(`No results were found for **${args.join(' ')}**.`);
 
             return message.channel.send(embed);
         }
