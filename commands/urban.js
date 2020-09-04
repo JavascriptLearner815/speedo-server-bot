@@ -11,6 +11,10 @@ module.exports = {
     usage: '<definition>',
     cooldown: 3,
     async execute(message, args) {
+        if (!message.channel.nsfw) {
+            return message.channel.send('You must go to this channel\'s options and turn on NSFW before using this command.');
+        }
+
         const query = stringify({ term: args.join(' ') });
 
         const { list } = await fetch(`https://api.urbandictionary.com/v0/define?${query}`).then(response => response.json());
