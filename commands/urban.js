@@ -15,7 +15,7 @@ module.exports = {
 
         const { list } = await fetch(`https://api.urbandictionary.com/v0/define?${query}`).then(response => response.json());
 
-        if (!list.length) {
+        if (!list || !list.length) {
             const embed = new MessageEmbed()
                 .setColor('#EFFF00')
                 .setTitle('Not Found')
